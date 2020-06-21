@@ -1,0 +1,1 @@
+python main.py -a preactresnet_18 --epochs 90 -b 256 --lr 0.1 --wd 1e-4 --lr_scheduler cos --dist-url 'tcp://127.0.0.1:12345' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 /soc_local/data/pytorch/imagenet/
